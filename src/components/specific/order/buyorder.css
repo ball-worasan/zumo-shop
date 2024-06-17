@@ -1,0 +1,150 @@
+.buy_order {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.buy_order form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 40rem;
+    min-height: 30rem;
+    padding: 2rem;
+    background: var(--background);
+    border-radius: 0.8rem;
+    border: var(--border);
+    position: relative;
+    overflow: hidden;
+    animation: dropTop .3s linear;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buy_order .close {
+    position: absolute;
+    right: 2rem;
+    font-size: 3rem;
+    color: var(--light-white);
+    cursor: pointer;
+}
+
+.buy_order .close:hover {
+    color: var(--white);
+}
+
+.buy_order .box {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.buy_order .box .head {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: var(--border-w);
+}
+
+.buy_order .box .head p {
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.buy_order .box .img {
+    width: auto;
+    height: auto;
+    margin: 0.5rem auto;
+    max-width: 20rem;
+    border-radius: 0.6rem;
+    background-color: var(--white);
+}
+
+.buy_order .box .img img {
+    max-width: 80%;
+}
+
+.buy_order .box .img .promptpay {
+    margin-top: 0.5rem;
+}
+
+.buy_order .box .img h2 {
+    color: var(--black);
+}
+
+.buy_order .alert {
+    display: flex;
+    color: var(--white);
+    border-radius: 1.2rem;
+    background-color: var(--white);
+}
+
+.buy_order .alert i {
+    width: 6rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem 0 0 1.2rem;
+    background-color: coral;
+}
+
+.buy_order .alert h3 {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.buy_order .alert h3 span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.buy_order .custum-file-upload {
+    margin: 1rem auto;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: .5rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #e8e8e8;
+}
+
+.buy_order .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy_order .custum-file-upload .text span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.buy_order .custum-file-upload input {
+    display: none;
+}
+
+.buy_order .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

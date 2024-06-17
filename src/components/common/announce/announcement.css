@@ -1,0 +1,33 @@
+.announcement {
+    border-radius: .4rem;
+    border: var(--border);
+    background: var(--white);
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    overflow: hidden;
+    font-size: 1.8rem;
+}
+
+.announcement-text {
+    display: flex;
+    align-items: center;
+}
+
+.announcement-text span {
+    margin: 0 10rem;
+}
+
+@media (max-width: 991px) {
+    .announcement {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .announcement {
+        font-size: 1.4rem;
+    }
+}

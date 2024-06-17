@@ -1,0 +1,164 @@
+.home .box-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+    gap: .5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.home .box-container .box {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--white);
+    border-radius: 0.4rem;
+    border: var(--border);
+    background-color: var(--bg-color);
+    transition: transform 0.3s;
+}
+
+.home .box-container .box:hover {
+    transform: scale(1.05);
+    margin: 0 .5rem;
+}
+
+.home .box-container .box i {
+    font-size: 2.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.home .box-container .box h3 {
+    color: var(--white);
+    margin: .5rem 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.home .box-container .game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.home .box-container .game img {
+    width: 99%;
+    height: auto;
+    border-radius: 4rem;
+    border: 0.1rem solid transparent;
+}
+
+.home .box-container .game h3 {
+    text-align: center;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+/* Services Section */
+.home .services {
+    position: relative;
+    padding: 2rem 1rem 5rem;
+    text-align: center;
+    border-top: var(--border);
+    background-color: var(--bg-color);
+    z-index: 100;
+}
+
+.home .services h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.home .service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.5rem;
+    margin: auto;
+}
+
+/* Service Item Styles */
+.home .service .service-item {
+    height: 100%;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient);
+    border-radius: 0.8rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home .service .service-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home .service .service-item::before {
+    content: "";
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+    width: calc(100% - 0.2rem);
+    height: calc(100% - 0.2rem);
+    background: var(--black);
+    border-radius: 0.8rem;
+    z-index: 1;
+    transition: background 0.2s;
+}
+
+.home .service .service-item:hover::before {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.home .service h3 {
+    position: relative;
+    z-index: 2;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--white);
+    text-align: center;
+}
+
+.home .service h3 span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .home .box-container {
+        grid-template-columns: repeat(5, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .home .box-container {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+    }
+
+    .home .service h3 {
+        position: relative;
+        z-index: 2;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: var(--white);
+        text-align: center;
+    }
+
+    .home .service h3 span {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .home .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

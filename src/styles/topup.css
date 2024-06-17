@@ -1,0 +1,284 @@
+.topup .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+    height: 25rem;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: 0.4rem;
+    background-color: var(--bg-color);
+}
+
+/* Label */
+.topup label {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 0.6rem;
+}
+
+/* Field */
+.topup .field {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1.6rem;
+    margin: 1.6rem 0;
+    color: var(--light-white);
+    border-radius: 0.8rem;
+    background-color: var(--black);
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+/* Input Icon */
+.topup .input-icon {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Input Field */
+.topup .input-field {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--white);
+    font-weight: 300;
+}
+
+/* Button Container */
+.topup .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Record */
+.topup .record {
+    margin: 1rem 2rem;
+}
+
+/* Options */
+.topup .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Options Select */
+.topup .options select {
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.6rem;
+    background-color: var(--bg-color);
+    color: var(--white);
+    border: var(--border);
+}
+
+/* Table */
+.topup .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.topup .table th,
+.topup .table td {
+    border: 0.1rem solid var(--light-white);
+    padding: 0.8rem;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.topup .table th {
+    background-color: var(--black);
+}
+
+.topupPopup {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.topupPopup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 40rem;
+    min-height: 30rem;
+    padding: 2rem;
+    background: var(--background);
+    border-radius: 0.8rem;
+    border: var(--border);
+    position: relative;
+    overflow: hidden;
+    animation: dropTop .3s linear;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.topupPopup .close {
+    position: absolute;
+    right: 2rem;
+    font-size: 3rem;
+    color: var(--light-white);
+    cursor: pointer;
+}
+
+.topupPopup .close:hover {
+    color: var(--white);
+}
+
+.topupPopup .box {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.topupPopup .box .head {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: var(--border-w);
+}
+
+.topupPopup .box .head p {
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.topupPopup .box .img {
+    width: auto;
+    height: auto;
+    margin: 0.5rem auto;
+    max-width: 20rem;
+    border-radius: 0.6rem;
+    background-color: var(--white);
+}
+
+.topupPopup .box .img img {
+    max-width: 80%;
+}
+
+.topupPopup .box .img .promptpay {
+    margin-top: 0.5rem;
+}
+
+.topupPopup .box .img h2 {
+    color: var(--black);
+}
+
+.topupPopup .alert {
+    display: flex;
+    color: var(--white);
+    border-radius: 1.2rem;
+    background-color: var(--white);
+}
+
+.topupPopup .alert i {
+    width: 6rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem 0 0 1.2rem;
+    background-color: coral;
+}
+
+.topupPopup .alert h3 {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.topupPopup .alert h3 span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.topupPopup .custum-file-upload {
+    margin: 1rem auto;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: .5rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #e8e8e8;
+}
+
+.topupPopup .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topupPopup .custum-file-upload .text span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.topupPopup .custum-file-upload input {
+    display: none;
+}
+
+.topupPopup .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+
+    .topup .table th,
+    .topup .table td {
+        font-size: 1.3rem;
+    }
+
+    .topup .box-container {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .topup .popup-content {
+        width: 35rem;
+    }
+
+    .topup .choice {
+        padding: 1rem;
+    }
+
+    .topup .head-choice {
+        font-size: 1.6rem;
+    }
+
+    .topup .choice h2 {
+        font-size: 2rem;
+    }
+
+    .topup .choice h2 span {
+        font-size: 1.2rem;
+    }
+}

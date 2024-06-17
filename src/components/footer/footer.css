@@ -1,0 +1,126 @@
+#app-footer {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    background: var(--background);
+}
+
+#app-footer .flex {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#app-footer .grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#app-footer .grid .box h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+#app-footer .grid .box a {
+    display: block;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+    color: var(--light-white);
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+#app-footer .grid .box a:hover {
+    color: var(--white);
+}
+
+#app-footer .grid .box i {
+    color: coral;
+    margin-right: 0.5rem;
+    transition: transform 0.3s;
+}
+
+#app-footer .grid .box a:hover i {
+    transform: scale(1.2);
+}
+
+#app-footer .credit {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--light-white);
+    border-top: var(--border);
+    transition: transform 0.3s;
+}
+
+#app-footer .box:hover h3,
+#app-footer .credit:hover {
+    transform: scale(1.05);
+}
+
+#app-footer .credit span {
+    color: transparent;
+    background: var(--gradient);
+    background-clip: text;
+}
+
+@media (min-width: 2560px) {
+    #app-footer .flex {
+        max-width: 1800px;
+    }
+
+    #app-footer .grid .box h3 {
+        font-size: 2.2rem;
+    }
+
+    #app-footer .grid .box a {
+        font-size: 2rem;
+    }
+
+    #app-footer .credit {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #app-footer .grid {
+        display: block;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+
+    #app-footer .grid .box h3 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+
+    #app-footer .grid .box a {
+        font-size: 1.6rem;
+    }
+
+    #app-footer .credit {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 450px) {
+    #app-footer .grid .box h3 {
+        font-size: 1.6rem;
+    }
+
+    #app-footer .grid .box a {
+        font-size: 1.4rem;
+    }
+
+    #app-footer .credit {
+        font-size: 1.6rem;
+    }
+}

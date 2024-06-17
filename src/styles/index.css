@@ -1,0 +1,143 @@
+:root {
+    --white: #fff;
+    --black: #171717;
+    --background: #1c1c1e;
+    --light-white: #999;
+    --box-shadow: 0 0.5rem 1rem #000;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.1);
+    --border-w: 0.1rem solid rgba(255, 255, 255, 0.8);
+    --border-b: 0.1rem solid rgba(0, 0, 0, 0.6);
+    --gradient: linear-gradient(65deg, deeppink, coral);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: var(--black);
+    color: var(--white);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+    overflow-x: hidden;
+}
+
+body {
+    color: var(--white);
+    background: var(--black);
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--white);
+    transition: background 0.3s ease;
+}
+
+main {
+    width: 100%;
+    min-height: 5vh;
+    z-index: 900;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--white);
+    background: var(--gradient);
+    border-radius: 0.8rem;
+    padding: 0.5rem 3rem;
+}
+
+.choice {
+    padding: 1.5rem 0;
+}
+
+.choice .head-choice {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-radius: 0.4rem;
+    color: var(--white);
+}
+
+.choice h2 {
+    font-size: 2rem;
+    margin-left: 0.6rem;
+    font-weight: 400;
+}
+
+.choice h2 span {
+    font-size: 1rem;
+    color: var(--light-white);
+    margin-top: 0.6rem;
+}
+
+label.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root,
+span.css-ahj2mt-MuiTypography-root {
+    font-size: 1.2rem;
+}
+
+button.css-9y1egq-MuiButtonBase-root-MuiButton-root,
+button.css-ypf870-MuiButtonBase-root-MuiButton-root,
+button.css-k9h04b-MuiButtonBase-root-MuiButton-root,
+button.css-jh47zj-MuiButtonBase-root-MuiButton-root {
+    font-size: 1.2rem;
+}
+
+
+@media (min-width: 2560px) {
+    section {
+        max-width: 1800px;
+    }
+
+    .choice h2 {
+        font-size: 2.4rem;
+    }
+
+    .choice h2 span {
+        font-size: 1.4rem;
+    }
+
+    span.css-ahj2mt-MuiTypography-root {
+        font-size: 1.6rem;
+    }
+
+    button.css-9y1egq-MuiButtonBase-root-MuiButton-root,
+    button.css-ypf870-MuiButtonBase-root-MuiButton-root,
+    button.css-k9h04b-MuiButtonBase-root-MuiButton-root,
+    button.css-jh47zj-MuiButtonBase-root-MuiButton-root {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 450px) {}
